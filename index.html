@@ -8,6 +8,119 @@
 </head>
 <body>
     <main>
+        <style>
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              background-color: #f1f1f1;
+              padding: 20px;
+              font-family: Arial;
+            }
+            
+            /* Center website */
+            .main {
+              max-width: 1000px;
+              margin: auto;
+            }
+            
+            h1 {
+              font-size: 50px;
+              word-break: break-all;
+            }
+            
+            .row {
+              margin: 8px -16px;
+            }
+            
+            /* Add padding BETWEEN each column */
+            .row,
+            .row > .column {
+              padding: 8px;
+            }
+            
+            /* Create four equal columns that floats next to each other */
+            .column {
+              float: left;
+              width: 25%;
+            }
+            
+            /* Clear floats after rows */ 
+            .row:after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+            
+            /* Content */
+            .content {
+              background-color: white;
+              padding: 10px;
+            }
+            
+            /* Responsive layout - makes a two column-layout instead of four columns */
+            @media screen and (max-width: 900px) {
+              .column {
+                width: 50%;
+              }
+            }
+            
+            /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+            @media screen and (max-width: 600px) {
+              .column {
+                width: 100%;
+              }
+            }
+            </style>
+            </head>
+            <body>
+            
+            <!-- MAIN (Center website) -->
+            <div class="main">
+            
+            <h1>Café, Chocolat et Livres</h1>
+            <hr>
+            
+            
+            <p>Embarque em uma jornada literária conosco enquanto exploramos os recantos mais fascinantes da literatura. Descubra novos mundos, personagens memoráveis e histórias cativantes em nosso site de livros</p>
+            
+            <div class="content">
+              <img src="https://i.postimg.cc/m2bcJsMB/logo.png" alt="Bear" style="width:100%">
+              
+             
+            </div>
+            
+            <!-- Portfolio Gallery Grid -->
+            <div class="row">
+              <div class="column">
+                <div class="content">
+                  <img src="https://th.bing.com/th/id/OIP.3BXZtWrY4hDTJwZMHaEoagAAAA?rs=1&pid=ImgDetMain" alt="Mountains" style="width:100%">
+                  <h3>Cem Anos de Solidão</h3>
+                  <p>Cem Anos de Solidão" conta a saga da família Buendía em Macondo, mergulhando em temas como amor, solidão e poder. Com uma prosa mágica, Gabriel García Márquez oferece um retrato envolvente e surreal de uma sociedade em constante transformação. Uma obra-prima que continua a encantar leitores com seus personagens.</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="content">
+                <img src="https://www.jorgeamado.org.br/wp-content/uploads/2021/05/Livro-Mitologia-dos-Orixas-R%EF%BF%BD8790.jpg" alt="Lights" style="width:100%">
+                  <h3>Mitologia dos Orixás</h3>
+                  <p>"Mitologia dos Orixás" apresenta um mergulho fascinante nas lendas e tradições dos deuses e deusas da religião africana. Com narrativas envolventes e ricas em simbolismo, este livro oferece uma visão única da mitologia iorubá, destacando a influência e a importância dos orixás na cultura e na espiritualidade africanas e afro-brasileiras. </p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="content">
+                <img src="https://th.bing.com/th/id/R.e723ee8c472b06ccc72ab4b76ad288d7?rik=fXLRyQARJlY4nQ&riu=http%3a%2f%2fmartinclaret.com.br%2fwp-content%2fuploads%2f2017%2f04%2f81KXDGrvnWL.jpg&ehk=ubwfgXqcCgJHkHGoAcCmJ6POIO%2bmHKrAqy8lIos1NcU%3d&risl=&pid=ImgRaw&r=0" alt="Nature" style="width:100%">
+                  <h3>O Cortiço</h3>
+                  <p>O Cortiço", de Aluísio Azevedo, retrata a vida na cidade do Rio de Janeiro durante o século XIX, focando especialmente nas classes marginalizadas. Através da história do cortiço de João Romão, o autor explora temas como ganância, ambição, paixão e luta de classes. Com uma narrativa realista e envolvente, o livro oferece uma perspectiva vívida e crítica da sociedade brasileira da época.</p>
+                </div>
+              </div>
+              <div class="column">
+                <div class="content">
+                <img src="https://www.educacaoetransformacao.com.br/wp-content/uploads/2020/03/Dom-Casmurro-Capa-da-obra-1899.jpg" alt="Mountains" style="width:100%">
+                  <h3>Dom Casmurro</h3>
+                  <p>"Dom Casmurro" é uma obra-prima de Machado de Assis que narra a história de Bentinho e sua obsessão por Capitu. Neste clássico da literatura brasileira, Machado de Assis tece uma trama envolvente sobre ciúmes, dúvidas e traição, deixando o leitor questionando até que ponto a narrativa de Bentinho é confiável.</p>
+                </div>
+              </div>
 
 
 
