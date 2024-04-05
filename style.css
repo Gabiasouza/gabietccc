@@ -30,8 +30,7 @@ nav a {
     background-image: url('cafe-background.jpg');
     background-size: cover;
     background-position: center;
-    height: 400px;
-    display: flex;
+    height: 300px;
     justify-content: center;
     align-items: center;
     color: #fff;
