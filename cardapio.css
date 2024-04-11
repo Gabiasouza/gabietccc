@@ -71,6 +71,9 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 10px;
     margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 .menu-item h3 {
     margin-top: 0;
@@ -82,4 +85,9 @@ header {
 }
 .price {
     color: #663300
+}
+
+.imagecafe {
+    max-width: 200px; /* Ajuste conforme necessário */
+    height: auto;
 }
