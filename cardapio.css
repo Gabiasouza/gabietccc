@@ -88,6 +88,10 @@ header {
 }
 
 .imagecafe {
-    /*max-width: 200px; /* Ajuste conforme necessário */
-    height: auto; */
+    width: 200px;
+    text-align: right;
+}
+
+.imagehead {
+    width: 1900px;
 }
