@@ -57,11 +57,24 @@ body {
     padding: 0;
 }
 header {
-    background-color: #663300;
+    background-color: #4d2600;
     color: #fff;
     padding: 10px;
     text-align: center;
 }
+
+nav {
+    background-color: #663300;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
 .menu {
     margin: 20px;
 }

@@ -1,207 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cardapio</title>
-        <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/3W5zQB0V/C-pia-de-Logotipo-Cafeteria-Moderno-Marrom.jpg">
-        <link rel="stylesheet" href="cardapio.css">
-    </head>
-    <body>
-        
-        <header>
-            <h1>Cardápio</h1>
-        </header>
-        <img src="https://i.postimg.cc/YCrXHYy3/image.png" alt="" class="imagehead">
-        <div class="menu">
-            <div class="menu-item">
-                <h3>Cafés do Zodíaco</h3>
-            </div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Café Chocolat et Livres</title>
+  <link rel="icon" type="image/x-icon" href="https://i.postimg.cc/3W5zQB0V/C-pia-de-Logotipo-Cafeteria-Moderno-Marrom.jpg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!--por o icon aqui depois me lembra-->
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+      <header>
+          <h1>Café Chocolat et livres</h1>
+      </header>
+      <nav>
+          <a href="index.html">Início</a>
+          <a href="sobrenos.html">Sobre Nós</a>
+          <a href="cardapio.html">Cardápio</a>
+          <a href="#">Contato e Localização</a>
+          <a href="livros.html">Acesse os nossos Livros Gratuitos</a>
+      </nav>
 
-        <div class="menu">
-            <div class="menu-item">
-                <h3>Orange Coffee - Áries</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café expresso, suco de laranja natural, gelo, e opcionalmente xarope de açúcar.</p>
-                <p>Energizante e refrescante, uma mistura única de café encorpado com o frescor cítrico da laranja.</p> 
-                <p>Ideal para os arianos que buscam um impulso extra para começar o dia.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/qRGnqTyP/orangecoffee.jpg" alt="Orange Coffee" class="imagecafe">
-            </div>
+      <!-- Carousel -->
+  <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    </div>
     
-            <div class="menu-item">
-                <h3>Bubble Coffee - Leão</h3>
-                <h4>Ingredientes:</h4>
-                <p> Café espresso, leite vaporizado, bolhas de tapioca, e xarope de baunilha.</p>
-                <p>Luxuoso e cheio de personalidade, combina a intensidade do café com a suavidade do leite e a diversão das bolhas de tapioca.</p>
-                <p>Perfeito para os leoninos que gostam de se destacar.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/q76NFZ0C/4ce321d7-174a-4e71-8537-74ebd3ec423e.jpg" alt="Bubble Coffee" class="imagecafe">
-            </div>
-            
-            <div class="menu-item">
-                <h3>Frapuccino - Sagitário</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café expresso, leite gelado, chantilly, e calda de chocolate ou caramelo.</p>
-                <p>Aventureiro e animado,uma explosão de sabores gelados, misturando café, leite e uma camada generosa de chantilly.</p> 
-                <p>Ideal para os sagitarianos que buscam uma experiência saborosa e divertida.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/DwHZ1dsf/82f73fb6-f014-40cb-aa99-0d8d1373326c.jpg" alt="Frapuccino" class="imagecafe">
-            </div>
-            
-            <div class="menu-item">
-                <h3>Affogato - Touro</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café expresso, sorvete de baunilha.</p>
-                <p> Luxuoso e indulgente, combina a intensidade do café quente com a suavidade e doçura do sorvete de baunilha.</p> 
-                <p>Perfeito para os taurinos que apreciam momentos de prazer e conforto.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/QxbRZ4CV/afagatto.jpg" alt="Affogato" class="imagecafe">
-            </div>
-            
-            <div class="menu-item">
-                <h3>Cortado - Virgem</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café expresso, leite vaporizado.</p>
-                <p> Simples e equilibrado, uma combinação perfeita de café expresso e leite vaporizado, destacando o sabor do café sem ser muito forte.</p> 
-                <p>Ideal para os virginianos que valorizam a precisão e a simplicidade.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/DfXcGBX0/f95cae5f-b73a-40c4-99fb-5e49562839e0.jpg" alt="Cortado" class="imagecafe">
-            </div>
+    <!-- The slideshow/carousel -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://i.postimg.cc/zD6WjPsz/image.png" alt="Cafeteria" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.postimg.cc/13rQmXw8/image.png" alt="Café" class="d-block" style="width:100%">
+      </div>
+      <div class="carousel-item">
+        <img src="https://i.postimg.cc/L4bG2fWC/image.png" alt="Croissaint" class="d-block" style="width:100%">
+      </div>
+    </div>
     
-            <div class="menu-item">
-                <h3>Americano - Capricórnio</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café expresso, água quente.</p>
-                <p>Focado e determinado, é um café forte e encorpado, feito pela adição de água quente ao café expresso, resultando em uma bebida que mantém a intensidade do café.</p> 
-                <p>Ideal para os capricornianos que buscam uma abordagem séria e concentrada em tudo o que fazem.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/2SpMv1yR/d7add31b-b55c-420c-ac4a-3a5c0c31f12b.jpg" alt="Americano" class="imagecafe">
-            </div>
-            
-            <div class="menu-item">
-                <h3>Latte - Gêmeos</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café expresso, leite vaporizado, espuma de leite.</p>
-                <p>Versátil e comunicativo, é uma combinação equilibrada de café expresso e leite vaporizado, finalizado com uma camada de espuma de leite</p> 
-                <p>Ideal para os geminianos que apreciam uma bebida suave e cremosa.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/j2XK9RBS/latte.jpg" alt="latte" class="imagecafe">
-            </div>
-            
-            <div class="menu-item">
-                <h3>Mocha - Libra</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café expresso, leite vaporizado, chocolate em pó ou calda de chocolate.</p>
-                <p>Harmonioso e indulgente, uma fusão deliciosa de café expresso, leite e chocolate, criando uma experiência decadente e equilibrada.</p> 
-                <p>Perfeito para os librianos que buscam um equilíbrio entre sabores ricos e suaves.</</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/sX8QH4d2/mocha.png" alt="Mocha" class="imagecafe">
-            </div>
-            
-            <div class="menu-item">
-                <h3>Espresso Tônica - Aquário</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café espresso, água tônica, gelo.</p>
-                <p>Original e refrescante, combina a intensidade do café espresso com a efervescência e frescor da água tônica, criando uma bebida única e revigorante.</p> 
-                <p>Ideal para os aquarianos que gostam de experimentar algo novo e diferente.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/2S2tt2Tm/d33fab8f-fc60-4d4e-8d8b-c5b3fb0cd22e.jpg" alt="espresso tônica" class="imagecafe">
-            </div>
-            
-            <div class="menu-item">
-                <h3>Cappuccino - Câncer</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café expresso, leite vaporizado, espuma de leite, canela ou chocolate em pó.</p>
-                <p>Aconchegante e reconfortante, uma mistura cremosa de café expresso, leite vaporizado e espuma de leite, geralmente polvilhado com canela ou chocolate em pó.</p> 
-                <p>Perfeito para os cancerianos que valorizam momentos de conforto e calor.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/xjW4Dr90/capuccino.jpg" alt="Cappuccino" class="imagecafe">
-            </div>
-            
-            <div class="menu-item">
-                <h3>Submarino - Escorpião</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café expresso, leite quente, barra de chocolate.</p>
-                <p>Intenso e enigmático, uma combinação simples de café expresso, leite quente e uma barra de chocolate que derrete na xícara, criando uma experiência indulgente e intensa.</p> 
-                <p>Ideal para os escorpianos que apreciam um toque de mistério e intensidade em suas escolhas.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/dDcFLLd6/submarino.png" alt="submarino" class="imagecafe">
-            </div>
-            
-            <div class="menu-item">
-                <h3>Chocolate Marshmallow - Peixes</h3>
-                <h4>Ingredientes:</h4>
-                <p>Café expresso, leite vaporizado, calda de chocolate, marshmallows.</p>
-                <p>Sonhador e doce, uma bebida reconfortante que combina café expresso, leite vaporizado, calda de chocolate e marshmallows derretidos, criando uma experiência indulgente e suave.</p> 
-                <p>Perfeito para os piscianos que buscam conforto e imaginação em cada gole.</p>
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/BnX5qp4J/de80f481-c633-4086-91c3-8ac18a5cac64.jpg" alt="Chocolate  Marshmallow" class="imagecafe">
-            </div>
-        </div>
-        <div class="menu">
-            <div class="menu-item">
-                <h3>Salgados & Doces e seus Acendentes</h3>
-            </div>
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  <div class="container">
+    <section class="hero-section"><br><br>
+        <h2>Bem-vindo à Café Chocolat et Livres &#9749;</h2><br>
+        <p>Explore os segredos do café e descubra uma experiência única de sabor e aroma em nossa cafeteria</p><br><br>
+        <p>Acesse o nosso<a href="cardapio.html"> Cardápio</a></p>
+    </section>
+  </div>
 
-            <div class="menu-item">
-                <h3>Panquecas Americanas Celestiais</h3>
-                <h4>Coberturas: Manteiga, Chocolate ou Caramelo</h4>
-                <p> Servidas quentes e macias, cada mordida é uma explosão de indulgência.</p>
-                <p>Cobertas com uma generosa porção de manteiga derretida, estas panquecas são o epitome do conforto matinal.</p> 
-                <p class="price"><strong>R$ 15,00</strong></p>
-                <img src="https://i.postimg.cc/RVtw3F2H/image.png" alt="Panquecas" class="imagecafe">
-            </div>
-
-            <div class="menu-item">
-                <h3>Torta de Frutas Vermelhas</h3>
-                <p>Uma fusão perfeita de morangos suculentos, amoras vibrantes e framboesas frescas, envolvidas em uma massa delicada e crocante.</p>                <p>Uma combinação irresistível de sabores que vai encantar seu paladar.</p> 
-                <p class="price"><strong>R$ 18,00</strong></p>
-                <img src="https://i.postimg.cc/W3ChjB6v/5e3e9d69-cf48-4a04-b81a-455ff88f867a.png" alt="Rocambole" class="imagecafe">
-            </div>
-
-            <div class="menu-item">
-                <h3>Torta de Franuí</h3>
-                <h4></h4>
-                <p>Delicie-se com nossa torta de franuí, uma iguaria que combina o sabor único e refrescante dessa fruta com uma massa leve e crocante. </p>
-                <p>Explosão de frescor e doçura, perfeito para satisfazer seu paladar em qualquer ocasião.</p> 
-                <p class="price"><strong>R$ 22,00</strong></p>
-                <img src="https://i.postimg.cc/dV6PGGfk/image.png" alt="" class="imagecafe">
-            </div>
-
-            <div class="menu-item">
-                <h3>Bolo Floresta Negra</h3>
-                <p>Camadas de bolo de chocolate úmido e macio são generosamente umedecidas com licor de cereja, criando uma base perfeita para o recheio de chantilly fresco e cerejas picadas. </p>
-                <p class="price"><strong>R$ 17,00</strong></p>
-                <img src="https://i.postimg.cc/PfyR3d49/image.png" alt="floresta negra" class="imagecafe">
-            </div>
-
-            <div class="menu-item">
-                <h3></h3>
-                <h4>Com cobertura (leite condensado) ou sem recheio</h4>
-                <p></p>
-                <p></p> 
-                <p class="price"><strong>R$ 7,00</strong></p>
-                <img src="https://i.postimg.cc/s1FmB0yF/image.png" alt="" class="imagecafe">
-            </div>
-
-            <div class="menu-item">
-                <h3></h3>
-                <h4></h4>
-                <p></p>
-                <p></p> 
-                <p class="price"><strong>R$ 25,00</strong></p>
-                <img src="" alt="" class="imagecafe">
-            </div>
-
-            <div class="menu-item">
-                <h3></h3>
-                <h4></h4>
-                <p></p>
-                <p></p> 
-                <p class="price"><strong>R$ 25,00</strong></p>
-                <img src="" alt="" class="imagecafe">
-            </div>
-        <script defer src="cardapio.js"></script>
-    </body>
+  <script defer src="script.js"></script>
+</body>
 </html>
