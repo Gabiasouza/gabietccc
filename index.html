@@ -12,6 +12,24 @@
   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
+
+    <title>Manipulação do DOM</title>
+    <script>
+      let count = 0;
+
+      function incrementCount() {
+        count++;
+        document.getELementById("count-display").textContent = count;
+      }
+    </script>
+
+     <h1>Manipulação do DOM</h1>
+     <button onclick="incrementCount()">Clique Aqui</button>
+     <p>Total de Cliques: <span id="count-display">0</span></p>
+
+
+    
+
       <header>
           <h1>Café Chocolat et livres</h1>
       </header>
