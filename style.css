@@ -46,3 +46,16 @@ nav a {
     border-bottom: 1px solid #ccc;
     padding: 10px 0;
 }
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+.botao:link, .botao:visited {
+    background-color: #814101;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
