@@ -63,13 +63,16 @@ nav a {
 body {
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da página */
     margin: 0;
-    padding: 0;
 }
 
 .form-container {
+    width: 100%;
     max-width: 500px;
-    margin: 50px auto;
     padding: 20px;
     background-color: #f4f4f4;
     border-radius: 8px;
@@ -88,7 +91,7 @@ body {
 }
 
 .form-container input, .form-container textarea {
-    width: 100%;
+    width: 100%; /* Certifica que o input ocupe toda a largura disponível */
     padding: 10px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -110,16 +113,3 @@ body {
 .form-container button:hover {
     background-color: #45a049;
 }
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = htmlspecialchars($_POST['nome']);
-    $email = htmlspecialchars($_POST['email']);
-    $mensagem = htmlspecialchars($_POST['mensagem']);
-
-    // Aqui você pode salvar os dados em um banco de dados ou enviar por e-mail.
-    echo "Nome: $nome<br>";
-    echo "Email: $email<br>";
-    echo "Mensagem: $mensagem<br>";
-}
-?>
