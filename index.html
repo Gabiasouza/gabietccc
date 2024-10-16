@@ -8,54 +8,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!--por o icon aqui depois me lembra-->
   <link rel="stylesheet" href="style.css"> 
   <base target="_blank">
 </head>
 <body>
-  <a href=" https://gabiasouza.github.io/LayoutResponsivo/">LAYOUT RESPONSIVO</a>
-   <a href=" https://gabiasouza.github.io/ListaDeTarefas/ ">LISTA DE TAREFA</a>
+  <a href="https://gabiasouza.github.io/LayoutResponsivo/">LAYOUT RESPONSIVO</a>
+  <a href="https://gabiasouza.github.io/ListaDeTarefas/">LISTA DE TAREFA</a>
 
-   <!-- <title>Manipulação do DOM</title>
-    <script>
-      let count = 0;
+  <header>
+    <h1>Café Chocolat et Livres</h1>
+  </header>
 
-      function incrementCount() {
-        count++;
-        document.getElementById("count-display").textContent = count;
-      }
-    </script>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="sobrenos.html">Sobre Nós</a>
+    <a href="cardapio.html">Cardápio</a>
+    <a href="localizacao.html">Contato e Localização</a>
+    <a href="livros.html">Acesse os nossos Livros Gratuitos</a>
+  </nav>
 
-    <h1>Manipulação do DOM</h1>
-     <button onclick="incrementCount()">Clique Aqui</button>
-     <p>Total de Cliques: <span id="count-display">0</span></p>-->
-      <header>
-          <h1>Café Chocolat et livres</h1>
-      </header>
-      <nav>
-          <a href="index.html">Início</a>
-          <a href="sobrenos.html">Sobre Nós</a>
-          <a href="cardapio.html">Cardápio</a>
-          <a href="localizacao.html">Contato e Localização</a>
-          <a href="livros.html">Acesse os nossos Livros Gratuitos</a>
-      </nav>
-
-
-
-      <!-- Carousel -->
+  <!-- Carousel -->
   <div id="demo" class="carousel slide" data-bs-ride="carousel">
-
     <!-- Indicators/dots -->
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="1" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="2" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="3" class="active"></button>
-      <button type="button" data-bs-target="#demo" data-bs-slide-to="4" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
     </div>
-          <!-- Carousel -->
-  <div id="demo" class="carousel slide" data-bs-ride="carousel">
-    
+
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -65,18 +47,17 @@
         <img src="https://i.postimg.cc/13rQmXw8/image.png" alt="Café" class="d-block" style="width:100%">
       </div>
       <div class="carousel-item">
-        <img src="https://i.postimg.cc/BvskW1Wc/image.png" alt="Croissaint" class="d-block" style="width:100%">
+        <img src="https://i.postimg.cc/BvskW1Wc/image.png" alt="Croissant" class="d-block" style="width:100%">
       </div>
       <div class="carousel-item">
         <img src="https://i.postimg.cc/K8YQtryW/image.png" alt="Vitrine" class="d-block" style="width:100%">
       </div>
       <div class="carousel-item">
-        <img src="https://i.postimg.cc/RVhnRPNw/image.png" alt="red velvet" class="d-block" style="width:100%">
+        <img src="https://i.postimg.cc/RVhnRPNw/image.png" alt="Red Velvet" class="d-block" style="width:100%">
       </div>
     </div>
-  
-    <div>
-    <!-- Left and right controls/icons setas -->
+
+    <!-- Left and right controls/icons -->
     <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
       <span class="carousel-control-prev-icon"></span>
     </button>
@@ -84,36 +65,14 @@
       <span class="carousel-control-next-icon"></span>
     </button>
   </div>
+
   <div class="container">
     <section class="hero-section"><br><br>
-        <h2>Bem-vindo à Café Chocolat et Livres &#9749;</h2><br>
-        <p>Explore os segredos do café e descubra uma experiência única de sabor e aroma em nossa cafeteria</p><br><br>
-        <p>Acesse o nosso <a class="botao" href="cardapio.html" target="_blank">Cardápio</a></p>
+      <h2>Bem-vindo à Café Chocolat et Livres &#9749;</h2><br>
+      <p>Explore os segredos do café e descubra uma experiência única de sabor e aroma em nossa cafeteria</p><br><br>
+      <p>Acesse o nosso <a class="botao" href="cardapio.html" target="_blank">Cardápio</a></p>
     </section>
   </div>
-
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário de Contato</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="form-container">
-        <h2>Formulário de Contato</h2>
-        <form action="submit.php" method="POST">
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
-    </div>
 
   <script defer src="script.js"></script>
 </body>
